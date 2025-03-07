@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Viewer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .comic-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 90%;
+        }
+
+        .comic-container img {
+            width: 600px;
+            height: 400px;
+            object-fit: contain;
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+            background: #fff;
+            border: 2px solid #ddd;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 12px 30px;
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-buttons a:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(to right, #0056b3, #003f80);
+        }
+
+        .nav-buttons a.disabled {
+            background: #ccc;
+            pointer-events: none;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Icons */
+        .nav-buttons a span {
+            font-size: 22px;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .comic-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Comic #<%= comic ? comic.comicNumber : "N/A" %></h1>
+
+    <div class="comic-container">
+        <% if (comic && comic.images && comic.images.length > 0) { %>
+            <% comic.images.forEach(image => { %>
+                <img src="<%= image %>" alt="Comic Image">
+            <% }); %>
+        <% } else { %>
+            <p>No comic available.</p>
+        <% } %>
+    </div>
+
+    <div class="nav-buttons">
+        <% if (prevIndex !== null) { %>
+            <a href="/<%= prevIndex %>">
+                <span>⬅</span> Previous
+            </a>
+        <% } else { %>
+            <a class="disabled">
+                <span>⬅</span> Previous
+            </a>
+        <% } %>
+
+        <% if (nextIndex !== null) { %>
+            <a href="/<%= nextIndex %>">
+                Next ➡ <span></span>
+            </a>
+        <% } else { %>
+            <a class="disabled">
+                Next ➡ <span></span>
+            </a>
+        <% } %>
+    </div>
+
+    <div class="footer">
+        <p>Powered by <strong>Illar Comic Viewer</strong> | &copy; <%= new Date().getFullYear() %></p>
+    </div>
+</body>
+</html>
