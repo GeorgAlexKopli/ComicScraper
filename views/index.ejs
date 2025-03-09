@@ -83,12 +83,12 @@
             color: #666;
         }
 
-        /* Icons */
+        
         .nav-buttons a span {
             font-size: 22px;
         }
 
-        /* Responsive */
+       
         @media (max-width: 700px) {
             .comic-container img {
                 width: 100%;
@@ -98,13 +98,11 @@
     </style>
 </head>
 <body>
-    <h1>Comic #<%= comic ? comic.comicNumber : "N/A" %></h1>
+    <h1>Comic #<%= comic ? comic.date : "N/A" %></h1>
 
     <div class="comic-container">
-        <% if (comic && comic.images && comic.images.length > 0) { %>
-            <% comic.images.forEach(image => { %>
-                <img src="<%= image %>" alt="Comic Image">
-            <% }); %>
+        <% if (comic && comic.image) { %>
+            <img src="<%= comic.image %>" alt="Comic Image">
         <% } else { %>
             <p>No comic available.</p>
         <% } %>

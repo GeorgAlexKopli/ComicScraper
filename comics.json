@@ -1,62 +1,62 @@
 [
   {
-    "comicNumber": 2500,
-    "images": [
-      "https://imgs.xkcd.com/comics/global_temperature_over_my_lifetime.png"
-    ]
+    "date": "2024/03/09",
+    "image": "https://assets.amuniversal.com/7a93e0c0a2a5013c394d005056a9545d"
   },
   {
-    "comicNumber": 2501,
-    "images": [
-      "https://imgs.xkcd.com/comics/average_familiarity.png"
-    ]
+    "date": "2024/03/08",
+    "image": "https://assets.amuniversal.com/78987e40a2a5013c394d005056a9545d"
   },
   {
-    "comicNumber": 2502,
-    "images": [
-      "https://imgs.xkcd.com/comics/every_data_table.png"
-    ]
+    "date": "2024/03/07",
+    "image": "https://assets.amuniversal.com/76c3d680a2a5013c394d005056a9545d"
   },
   {
-    "comicNumber": 2503,
-    "images": [
-      "https://imgs.xkcd.com/comics/memo_spike_connector.png"
-    ]
+    "date": "2024/03/06",
+    "image": "https://assets.amuniversal.com/74c84110a2a5013c394d005056a9545d"
   },
   {
-    "comicNumber": 2504,
-    "images": [
-      "https://imgs.xkcd.com/comics/fissile_raspberry_isotopes.png"
-    ]
+    "date": "2024/03/05",
+    "image": "https://assets.amuniversal.com/72f09610a2a5013c394d005056a9545d"
   },
   {
-    "comicNumber": 2505,
-    "images": [
-      "https://imgs.xkcd.com/comics/news_story_reaction.png"
-    ]
+    "date": "2024/03/04",
+    "image": "https://assets.amuniversal.com/712cee10a2a5013c394d005056a9545d"
   },
   {
-    "comicNumber": 2506,
-    "images": [
-      "https://imgs.xkcd.com/comics/projecting.png"
-    ]
+    "date": "2024/03/03",
+    "image": "https://assets.amuniversal.com/67e502407230013c2ad7005056a9545d"
   },
   {
-    "comicNumber": 2507,
-    "images": [
-      "https://imgs.xkcd.com/comics/usv_c.png"
-    ]
+    "date": "2024/03/02",
+    "image": "https://assets.amuniversal.com/b6e6d2c07230013c2ad7005056a9545d"
   },
   {
-    "comicNumber": 2508,
-    "images": [
-      "https://imgs.xkcd.com/comics/circumappendiceal_somectomy.png"
-    ]
+    "date": "2024/03/01",
+    "image": "https://assets.amuniversal.com/b4a79d307230013c2ad7005056a9545d"
   },
   {
-    "comicNumber": 2509,
-    "images": [
-      "https://imgs.xkcd.com/comics/useful_geometry_formulas.png"
-    ]
+    "date": "2024/02/29",
+    "image": "https://assets.amuniversal.com/b280aac07230013c2ad7005056a9545d"
+  },
+  {
+    "date": "2024/02/28",
+    "image": "https://assets.amuniversal.com/b04c28f07230013c2ad7005056a9545d"
+  },
+  {
+    "date": "2024/02/27",
+    "image": "https://assets.amuniversal.com/adf004307230013c2ad7005056a9545d"
+  },
+  {
+    "date": "2024/02/26",
+    "image": "https://assets.amuniversal.com/ab7e7f607230013c2ad7005056a9545d"
+  },
+  {
+    "date": "2024/02/25",
+    "image": "https://assets.amuniversal.com/3f2fb3d0b6e8013c3f5e005056a9545d"
+  },
+  {
+    "date": "2024/02/24",
+    "image": "https://assets.amuniversal.com/a9510e507230013c2ad7005056a9545d"
   }
 ]
